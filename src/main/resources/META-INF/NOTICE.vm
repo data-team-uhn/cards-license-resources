@@ -1,0 +1,18 @@
+${project.name}
+
+Copyright ${projectTimespan} ${project.organization.name}.
+
+This software is made available under the ${project.licenses[0].name}#if($project.licenses[0].name.indexOf("License") < 0) License#end. See the LICENSE file for more details.
+
+#foreach($organization in $projectsSortedByOrganization.keySet())
+This product includes/uses software developed by '$organization.name'#if($organization.url) ($organization.url)#end
+
+#foreach($project in $projectsSortedByOrganization.get($organization))
+  - $project.name#if($project.url) ($project.url)#end
+
+#foreach ( $license in $project.licenses)
+      License: $license.name
+#end
+#end
+
+#end
