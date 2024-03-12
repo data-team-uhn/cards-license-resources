@@ -62,6 +62,15 @@
           </excludes>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-release-plugin</artifactId>
+        <configuration>
+          <arguments>-Pquick</arguments>
+          <preparationGoals>clean verify</preparationGoals>
+          <tagNameFormat>cards-license-resources-@{project.version}</tagNameFormat>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 </project>
