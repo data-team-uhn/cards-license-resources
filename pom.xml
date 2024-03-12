@@ -22,7 +22,7 @@
     <version>0.9.22</version>
   </parent>
   <artifactId>cards-license-resources</artifactId>
-  <version>1</version>
+  <version>2-SNAPSHOT</version>
   <name>CARDS - License Resources</name>
   <packaging>jar</packaging>
   <description>Resources needed for including LICENSE and NOTICE files in build artifacts</description>
@@ -31,7 +31,7 @@
     <connection>scm:git:git://github.com/data-team-uhn/cards-license-resources.git</connection>
     <developerConnection>scm:git:git@github.com:data-team-uhn/cards-license-resources.git</developerConnection>
     <url>https://github.com/data-team-uhn/cards-license-resources/tree/master/</url>
-    <tag>cards-license-resources-1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <build>
